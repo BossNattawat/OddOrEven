@@ -2,18 +2,15 @@ def main():
     numbers = []
     even = []
     odd = []
-    i = 0
 
     times = int(input("How many number do you want to add : "))
 
-    while True:
+    while times != 0:
         if times <= 0:
             return False
-        i += 1
+        times -= 1
         numberInput = int(input("Enter some number : "))
         numbers.append(numberInput)
-        if i >= times:
-            break
 
     for number in numbers:
         if (number % 2) == 0:
